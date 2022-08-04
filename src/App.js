@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <h1>Hello, for the {counter} time.</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
+      <button onClick={() => dispatch(increment(5))}>+</button>
+      <button onClick={() => dispatch(decrement(3))}>-</button>
       <br></br>
 
       {logStatus ? <h3>Classified information</h3> : "General information"}
